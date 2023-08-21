@@ -7,12 +7,12 @@
 <style>
   /* Estilo para campos preenchidos */
   input:valid {
-    border-color: green;
+    border-color: rgb(16, 94, 16);
   }
 
   /* Estilo para campos obrigatórios não preenchidos */
   input:invalid {
-    border-color: red;
+    border-color: rgb(169, 22, 22);
   }
 </style>
 </head>
@@ -72,6 +72,19 @@
       <br>
       <label for="senha">Senha:</label>
       <input type="password" id="senha" name="senha" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Deseja receber informações sobre os seguintes assuntos abaixo:</legend>
+      <div>
+        <input type="checkbox" id="tecnologia" name="tecnologia" checked />
+        <label for="tecnologia">Tecnologia</label>
+      </div>
+
+      <div>
+        <input />
+        <label></label>
+      </div>
     </fieldset>
 
     <button type="submit">Enviar</button>
