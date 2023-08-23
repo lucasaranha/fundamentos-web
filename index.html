@@ -9,7 +9,7 @@
 </head>
 <body>
   <h1>Formulário de Cadastro</h1>
-  <form>
+  <form action="cadastro.html" method="post">
     <fieldset>
       <legend>Dados Pessoais</legend>
       <label for="nome">Nome completo:</label>
@@ -20,6 +20,12 @@
       <br>
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required>
+      <br>
+      <label for="sexo">Sexo:</label>
+      <select id="sexo" name="sexo">
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+      </select>
       <br>
       <label for="estado_civil">Estado Civil:</label>
       <select id="estado_civil" name="estado_civil">
@@ -35,7 +41,7 @@
 
     <br>
 
-    <fieldset>
+    <fieldset id="dados_contato">
       <legend>Dados de Contato</legend>
       <label for="endereco">Endereço:</label>
       <input type="text" id="endereco" name="endereco" required>
