@@ -14,8 +14,13 @@ body {
     font-family: monospace;
 }
 
+input {
+    border-style:double;
+    border-radius: 5px;
+}
+
 input:valid {
-    border-color: rgb(6, 126, 6)
+    border-color: rgb(6, 126, 6);
 }
 
 input:invalid {
